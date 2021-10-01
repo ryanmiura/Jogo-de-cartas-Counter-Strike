@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        
+        <h1 class="page-title">Super Trunfo Counter-Strike</h1>
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+
+        <h2>Escolha a sua melhor estatistica</h2>
+    </div>
+    <div class="wrapper">
+
+        <div>
+            <h2>Sua Carta</h2>
+            <div id="carta-jogador">
+                <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                    style=" width: inherit; height: inherit; position: absolute;opacity: 0%;">
+                <h3></h3>
+            </div>
+        </div>
+        <div>
+            <h2>Carta da Maquina</h2>
+            <div id="carta-maquina" class="carta">
+                <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                    style=" width: inherit; height: inherit; position: absolute;opacity: 0%;">
+            </div>
+        </div>
+    </div>
+    <form id="form">
+         <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+        <div id="resultado"></div>
+        <button class="button-jogar-denovo" type="button" id="btnJogarDnv" onclick="jogarDnv()" disabled="false">Jogar Denovo</button>
+
+    </form>
+    <a href="https://github.com/ryanmiura" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1322/1322053.png" alt="" class="github-logo">
+      </a>
+    <script src="./script.js"></script>
+</body>
+
+</html>
